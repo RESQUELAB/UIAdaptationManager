@@ -1,0 +1,113 @@
+<html>
+
+<head>
+    <title>Adaptation Server</title>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <meta charset="UTF-8">
+    <!-- styles -->
+    <link href="./styles.css" rel="stylesheet">
+    <link href="./jquery/jquery-ui.css" rel="stylesheet">
+    <!-- JS Libraries -->
+    <script src="./jquery/external/jquery/jquery.js"></script>
+    <!-- JS -->
+    <script src="./js/check.js"></script>
+    <script src="./js/pageNavigation.js"></script>
+    <script src="./js/translator.js"></script>
+
+</head>
+
+<body>
+    <div id="main-container">
+        <div id="status">
+            <span>Server URI: <b><span id="serverID">0.0.0.0:0000</span></b></span><br>
+            <span>Server Password: <b><span id="password"></span></b></span><br>
+            <hr style="width: 75%;">
+            
+            <h3>Experiment Parameters</h3>
+            <div class="parameters-container">
+                <div class="row">
+                    <div class="col">
+                        <label for="experiment-name"><b>Experiment Name:</b></label>
+                        <input type="text" id="experiment-name" placeholder="Enter experiment name">
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col">
+                        <label for="experiment-type"><b>Type:</b></label>
+                        <select id="experiment-type">
+                            <option value="within">Within Subjects</option>
+                            <option value="between">Between Subjects</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col">
+                        <label for="experiment-session"><b>Session:</b></label>
+                        <input type="number" id="experiment-session" placeholder="Enter session number" min="1">
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col">
+                        <div id="methods-container">
+                            <label><b>Methods:</b></label>
+                            <div class="checkbox-container" id="methods-checkboxes"></div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div id="domains-container">
+                            <label><b>Domains:</b></label>
+                            <div class="checkbox-container" id="domains-checkboxes"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <span>Number of Groups: <b><span id="num-groups">0</span></b></span>
+                <div id="group-definitions-container" class="table-container">
+                    <h4>Group Definitions</h4>
+                    <table id="group-definitions" class="table">
+                        <thead>
+                            <tr>
+                                <th rowspan="2">Group</th>
+                                <th colspan="2">Session 1</th>
+                                <th colspan="2">Session 2</th>
+                            </tr>
+                            <tr>
+                                <th>Method</th>
+                                <th>Domain</th>
+                                <th>Method</th>
+                                <th>Domain</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+
+
+            </div>
+
+            
+            
+            <hr style="width: 75%;">
+
+
+
+            <span><span id="clientsQuantity">0</span> clients connected <span id="groupCounts"></span></span><br>
+            
+            <span>Server uptime: <span id="serverUptime">00:00</span></span><br>
+            <button class="logsFolder">Logs folder</button><br><br>
+            <button class="refresh">Refresh</button><br><br>
+        </div>
+        <div id="clients">
+        </div>
+    </div>
+</body>
+<script src="./js/afterLoad.js"></script>
+<script src="./js/commsView.js"></script>
+
+</html>

@@ -1,0 +1,202 @@
+body {
+    width: 100%;
+    margin: 0;
+}
+
+#main-container {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+/* Selected clients */
+.selected-clients {
+    margin-top: 36px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Clients table */
+#main-container table {
+    margin: auto;
+}
+
+#main-container table tr>* {
+    padding: 2px 6px;
+}
+
+#clients {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#clients>.client-group {
+    margin-top: 20px;
+    border: 1px solid lightgray;
+    width: 80%;
+    padding: 10px 0px;
+    border-radius: 10px;
+}
+
+.clients-list>div {
+    display: grid;
+    grid-template-columns: 4% 21% 10% 30% 14% 14% 10% 10%;
+    align-items: center;
+    border-top: 1px solid lightgray;
+    padding: 20px 0;
+}
+
+.actionsArea {
+    text-align: left;
+    font-size: small;
+}
+
+.actionsArea>.collapsable {
+    display: none;
+}
+
+.actionsArea.expanded>.collapsable {
+    display: block;
+}
+
+.actionsArea>.collapsable.header {
+    margin-top: 8px;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+table {
+    width: 85%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+
+.actionsArea button,
+.categoryArea button,
+.agentArea button {
+    margin: 2px;
+    padding: 5px 10px;
+}
+
+.actionsArea {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 2px;
+}
+
+.collapsable {
+    grid-column: span 2;
+}
+
+.header {
+    grid-column: span 3;
+}
+
+.parameters-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.col {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.checkbox-container {
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+/* Key-Value pair container */
+.key-value-container {
+    display: flex;
+    flex-direction: column; 
+    padding: 10px; 
+    font-size: 14px; 
+    line-height: 1.6; 
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    width: 90%; 
+    margin: 10px auto; 
+}
+
+/* Each key-value pair */
+.key-value-item {
+    display: flex;
+    justify-content: space-between; 
+    padding: 4px 0; 
+}
+
+/* Key styling */
+.key-value-item .key {
+    font-weight: bold; 
+    margin-right: 10px; 
+}
+
+/* Value styling */
+.key-value-item .value {
+    color: #333; 
+    text-align: right; 
+}
+
+
+.table-container {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.table th, .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.table th[rowspan="2"] {
+    vertical-align: middle;
+}

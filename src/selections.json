@@ -1,0 +1,109 @@
+{
+  "test": {
+    "name": "test",
+    "type": "within",
+    "session": "2",
+    "methods": [
+      "Non-Adaptive",
+      "HCI-HF"
+    ],
+    "domains": [
+      "Courses",
+      "Trips"
+    ],
+    "totalGroups": 4
+  },
+  "test2": {
+    "type": "between",
+    "session": "2",
+    "methods": [
+      "Non-Adaptive",
+      "HCI",
+      "HCI-HF"
+    ],
+    "domains": [
+      "Trips"
+    ]
+  },
+  "": {
+    "type": "within",
+    "session": "1",
+    "methods": [],
+    "domains": []
+  },
+  "yet_another_test": {
+    "type": "between",
+    "session": "1",
+    "methods": [
+      "Non-Adaptive",
+      "HCI",
+      "HCI-HF"
+    ],
+    "domains": [
+      "Sports",
+      "Courses",
+      "Trips"
+    ],
+    "totalGroups": 9
+  },
+  "andres": {
+    "name": "andres",
+    "type": "within",
+    "session": "1",
+    "methods": [
+      "Non-Adaptive",
+      "HCI",
+      "HCI-HF"
+    ],
+    "domains": [
+      "Sports",
+      "Courses",
+      "Trips"
+    ],
+    "totalGroups": 9
+  },
+  "nuevo_test": {
+    "name": "nuevo_test",
+    "type": "within",
+    "session": "1",
+    "methods": [
+      "Non-Adaptive",
+      "HCI",
+      "HCI-HF",
+      "nuevo metodo"
+    ],
+    "domains": [
+      "Sports",
+      "Courses"
+    ],
+    "totalGroups": 8
+  },
+  "prueba_ise": {
+    "name": "prueba_ise",
+    "type": "within",
+    "session": "1",
+    "methods": [
+      "Non-Adaptive",
+      "HCI-HF"
+    ],
+    "domains": [
+      "Courses",
+      "Trips"
+    ],
+    "totalGroups": 4
+  },
+  "prueba": {
+    "name": "prueba",
+    "type": "within",
+    "session": "2",
+    "methods": [
+      "Non-Adaptive",
+      "HCI-HF"
+    ],
+    "domains": [
+      "Courses",
+      "Trips"
+    ],
+    "totalGroups": 4
+  }
+}
